@@ -9,7 +9,7 @@ dotenv.config();
 
 const app = express();
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, './../client/build')));
+app.use(express.static(path.join(__dirname, './../ui/build')));
 
 app.post('/api/search', async (req, res) => {
     const { query } = req.body;
@@ -40,7 +40,7 @@ app.post('/api/search', async (req, res) => {
 });
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname + './../client/build/index.html'));
+    res.sendFile(path.join(__dirname + './../ui/build/index.html'));
 });
 
 const PORT = process.env.PORT || 3000;
