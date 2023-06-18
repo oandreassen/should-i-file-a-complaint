@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "cd ui && npm run build && cd .. && tsc",
+    "build": "cd frontend && npm run build && cd .. && tsc",
     "import": "node ./build/import.js",
     "start": "node ./build/index.js"
   },
