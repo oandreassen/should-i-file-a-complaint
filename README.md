@@ -23,7 +23,7 @@ ___
 
 # Code highlights
 
-## Prompting
+## Prompting 
 
 We added the following system prompt to use with the compleitions api:
 
