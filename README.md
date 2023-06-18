@@ -142,9 +142,17 @@ npm run import -- Bug 2023-01-01
 
 To launch the application, execute the following:
 
+## Plain node 
 ```bash
 npm start run
 ```
+
+## Docker
+```dockerfile
+docker build -t shouldi .
+docker run -p 3000:3000 --env-file .env shouldi
+```
+
 
 Open a browser and navigate to [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
